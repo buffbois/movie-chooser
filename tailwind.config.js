@@ -4,7 +4,22 @@ module.exports = {
         './components/**/*.{js,ts,jsx,tsx}',
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                'cubano': ['cubano-sharp', 'sans-serif'],
+                'aktiv': ['aktiv-grotesk-extended', 'sans-serif']
+            },
+        },
+        colors: {
+            transparent: 'transparent',
+            current: 'currentColor',
+            'purple': {
+                100: '#5657B3',
+                200: '#131744'
+            },
+            'pink': '#D54ECE',
+            'teal': '#86D5E7',
+        },
     },
     plugins: [],
 }

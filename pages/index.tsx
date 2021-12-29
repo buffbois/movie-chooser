@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Navigation from '../components/navigation'
 import Background from '../components/background'
 
+
 const Home: NextPage = () => {
   return (
     <>
