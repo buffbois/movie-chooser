@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Navigation from '../components/navigation'
 import Background from '../components/background'
+import Footer from '../components/footer'
 
 
 const Home: NextPage = () => {
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       <Background>
 
       </Background>
+      <Footer />
     </>
   )
 }
