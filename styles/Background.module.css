@@ -1,4 +1,5 @@
 .background {
     background: linear-gradient(#131744, #5657B3);
-    min-height: 1000em;
+    /* Remove min-height after adding more content */
+    min-height: 1000em; 
 }
