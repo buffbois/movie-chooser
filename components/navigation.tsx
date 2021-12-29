@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import styles from '../styles/Navigation.module.css'
 
 export default function Navigation() {
@@ -13,6 +12,5 @@ export default function Navigation() {
                 <a className={styles.item}><span className={styles.box}>Login/Sign-Up</span></a>
             </nav>
         </div>
-
     )
 }
