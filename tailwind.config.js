@@ -10,7 +10,7 @@ module.exports = {
                 'aktiv': ['aktiv-grotesk-extended', 'sans-serif']
             },
             minHeight: {
-                'perfect': '85vh',
+                'perfect': '82vh',
             },
         },
         colors: {
