@@ -9,6 +9,9 @@ module.exports = {
                 'cubano': ['cubano-sharp', 'sans-serif'],
                 'aktiv': ['aktiv-grotesk-extended', 'sans-serif']
             },
+            minHeight: {
+                'perfect': '85vh',
+            },
         },
         colors: {
             transparent: 'transparent',
@@ -18,9 +21,15 @@ module.exports = {
                 200: '#3E4299',
                 300: '#131744',
             },
-            'pink': '#D54ECE',
+            'pink': {
+                100: '#DEABEE',
+                200: '#D54ECE',
+            },
             'teal': '#86D5E7',
-            'white': '#FFFFFF',
+            'white': {
+                100: '#FFFFFF',
+                200: '#81B7E3',
+            },
         },
     },
     plugins: [],
