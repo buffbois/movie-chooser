@@ -14,6 +14,5 @@ export default function Navigation() {
                 </nav>
             </div>
         </div>
-        
     )
 }
