@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import NavLink from './navlink';
 
 export default function Navigation() {
 
@@ -16,19 +17,15 @@ export default function Navigation() {
             </div>
             <div className='col-span-3 bg-pink-200 flex justify-start'>
                 <div>
-                    <Link href="/">
-                        <a className={homeClass}>Home</a>
-                    </Link>
+                    <NavLink linkClass={homeClass} linkRoute="/">Home</NavLink>
                     <a className='inline-block font-aktiv py-3.5 px-7 hover:bg-teal'>Group Stats</a>
                     <a className='inline-block font-aktiv py-3.5 px-7 hover:bg-teal'>Recommendations</a>
                     <a className='inline-block font-aktiv py-3.5 px-7 hover:bg-teal'>My Stats</a>
                 </div>
                 <div className='w-perfect flex justify-end'>
-                    <Link href="/account">
-                        <a className={signinClass}>Login/Sign-Up</a>
-                    </Link>
+                    <NavLink linkClass={signinClass} linkRoute="/account">Login/Sign Up</NavLink>
                 </div>
-            </div>
-        </nav>
+            </div >
+        </nav >
     )
 }
