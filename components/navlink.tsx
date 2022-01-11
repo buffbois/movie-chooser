@@ -1,12 +1,12 @@
 import Link from "next/link"
 import { useRouter } from 'next/router'
 
-const toggledClass = "bg-pink-100 inline-block font-aktiv py-3.5 px-7 hover:bg-teal";
-const untoggledClass = "inline-block font-aktiv py-3.5 px-7 hover:bg-teal";
+const inactiveClass = "font-aktiv py-5 text-center hover:bg-teal";
+const activeClass = "bg-pink-100 " + inactiveClass;
 
-export default function NavLink({ linkRoute, children }: { linkRoute: string, children: React.ReactNode }) {
+export default function NavLink({ linkRoute, additionalClasses, children }: { linkRoute: string, additionalClasses: string, children: React.ReactNode }) {
     const router = useRouter();
-    const selfClass = router.pathname == linkRoute ? toggledClass : untoggledClass;
+    const selfClass = additionalClasses + " " + (router.pathname == linkRoute ? activeClass : inactiveClass);
 
     return (
         <Link href={linkRoute}>
